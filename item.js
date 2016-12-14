@@ -17,18 +17,21 @@ let agift = new Item("Ball",60,5);
 class Cart{
   //What is the first part of every class? Type it below.
 constructor(i,q){
-  this.itemList(i);
-  this.itemQuantity(q);
+  this.itemList = i;
+  this.itemQuantity = q;
   }
+
   addItem(i,q){
-
-  }
-
+    this.itemList.push(i);
+    this.itemQuantity.push(q);
   }
   totalCart(){
     let total = 0;
     for(i=0; i<this.itemList.length i++){
-      total +=(this.itemList[i].price*this,itemQuantity[i]);
+      total += this.itemList[i].price*this.itemQuantity[i];
     }
-      return total;
-    }
+    return total;
+  }
+  subCart(days){
+    var subCart = new Cart([],[]);
+  }
