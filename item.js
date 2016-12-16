@@ -51,6 +51,14 @@ class Password{
   }
 
   validPublicKey(){
-    
+    if(this.publickey.length >= 8 && this.publickey.length <= 25){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+  validPrivateKey(){
+        
   }
 }
